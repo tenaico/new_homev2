@@ -127,7 +127,16 @@
   "담당 배정": "Assigning the right person",
   "신청서는 관리자가 아닌 접속에서는 조회조차 되지 않습니다. 접수일로부터 1년이 지나면 자동으로 지우며, 그 전에 지워 달라고 하시면 바로 지웁니다.": "Requests cannot even be read by anyone other than administrators. They are deleted automatically one year after receipt, and right away if you ask us earlier.",
   "상담 신청": "Consultation requests",
-  "접수일로부터 1년. 지난 신청은 자동으로 삭제하며, 삭제 요청 시 즉시 파기": "1 year from receipt. Older requests are deleted automatically; deleted immediately on request"
+  "접수일로부터 1년. 지난 신청은 자동으로 삭제하며, 삭제 요청 시 즉시 파기": "1 year from receipt. Older requests are deleted automatically; deleted immediately on request",
+  "사. 한판 홈 화면의 트렌드 소식 (2026년 12월 1일부터)": "g. Trend news on the Hanpan Home screen (from December 1, 2026)",
+  "프로그램 이름과 버전": "Program name and version",
+  "버전에 맞는 형식으로 답하기": "Answering in the format that version expects",
+  "IP 주소": "IP address",
+  "인터넷 접속 시 자동": "Sent automatically with any internet connection",
+  "응답 전송": "Delivering the response",
+  "한판 트렌드 소식 요청 (2026년 12월 1일부터)": "Hanpan trend news requests (from December 1, 2026)",
+  "회사가 저장하지 않음. 인프라 제공자의 서버 기록은 위 ‘접속 기록’과 같음": "Not stored by the Company. Server logs kept by infrastructure providers follow “Access logs” above",
+  "trend.tenai.kr 호스팅, 한판 트렌드 기상도 전송 (2026년 12월 1일부터)": "Hosting trend.tenai.kr, delivering the Hanpan trend forecast (from December 1, 2026)"
  },
  "html": {
   "rights-1": "Request <strong>access</strong> to your personal information",
@@ -135,6 +144,10 @@
   "rights-3": "Request <strong>deletion</strong> (except where the law requires the information to be retained)",
   "rights-4": "Request <strong>suspension</strong> of processing",
   "rights-5": "<strong>Withdraw consent</strong> and cancel membership",
-  "rev-inquiry": "<strong>Added</strong> — From October 11, 2026, <a href=\"#inquiry\">Section 1(f), “Consultation request form”</a> and the retention period for “Consultation requests” in Section 2 apply. This tells you what we collect now that the site has a consultation request form."
+  "rev-inquiry": "<strong>Added</strong> — From October 11, 2026, <a href=\"#inquiry\">Section 1(f), “Consultation request form”</a> and the retention period for “Consultation requests” in Section 2 apply. This tells you what we collect now that the site has a consultation request form.",
+  "rev-hanpan-trend": "<strong>Upcoming revision:</strong> starting December 1, 2026, <a href=\"#hanpan-trend\">Section 1(g), “Trend news on the Hanpan Home screen”</a> takes effect as a new provision. It describes the request that Hanpan, our document program, sends to trend.tenai.kr to show the trend forecast on its Home screen. Also changing: the retention periods in Section 2 · the processors in Section 4.",
+  "hanpan-trend-1": "To show today's trend forecast on the trend card of its Home screen, the Company's document program <strong>Hanpan</strong> fetches the forecast from trend.tenai.kr about 3 seconds after it starts and every 6 hours after that. Only the following reaches the Company's server.",
+  "hanpan-trend-2": "No account information, no number that tells devices apart, and no document or file information is sent, and no cookies are used. The Company <strong>does not store or count these requests.</strong> As in Section 1(d), the IP address may be recorded automatically in the server logs of our infrastructure providers. The forecast received is kept only on the user's PC. Removing the trend card in Hanpan's “Customize Home” stops these requests.",
+  "hanpan-trend-3": "If you click the trend card and open the trend.tenai.kr site in a browser, the site records an aggregate count of visits that cannot identify individuals (page viewed, where the visit came from, device type) with Vercel Web Analytics, without cookies."
  }
 }
