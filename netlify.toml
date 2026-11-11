@@ -53,6 +53,11 @@
   status = 200
 
 [[redirects]]
+  from = "/hanpan-terms"
+  to = "/hanpan-terms.html"
+  status = 200
+
+[[redirects]]
   from = "/membership"
   to = "/membership.html"
   status = 200

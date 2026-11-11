@@ -72,6 +72,12 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://tenai.kr/hanpan-terms</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://tenai.kr/profile/</loc>
     <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>

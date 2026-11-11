@@ -57,6 +57,15 @@
     "이 약관은 대한민국 법령에 따라 해석하며, 서비스 이용과 관련한 분쟁은 회사의 주소지를 관할하는 법원을 제1심 관할 법원으로 합니다. 소송에 앞서 이메일": "These terms are interpreted in accordance with the laws of the Republic of Korea, and the court having jurisdiction over the Company's address shall be the court of first instance for any dispute relating to the use of the service. If you contact us by email at",
     "로 문의 주시면 성실히 협의하겠습니다.": "before taking legal action, we will discuss the matter with you in good faith.",
     "문의": "Contact",
-    "상호": "Trade name"
+    "상호": "Trade name",
+    "한판 내려받기와 보안키 발급 (2026년 11월 20일부터)": "Hanpan downloads and security key issuance (from November 20, 2026)",
+    "부칙": "Addendum"
+  },
+  "html": {
+    "rev-hanpan": "<strong>Upcoming change</strong> — From November 20, 2026, Article 2 adds the meanings of “Hanpan” and “security key”, and Article 5 adds Hanpan downloads and security key issuance. The conditions for existing services do not change. Hanpan and security keys are also governed by the new <a href=\"/hanpan-terms\">Hanpan Terms</a>. (Announced November 13, 2026)",
+    "def-hanpan": "<strong>Hanpan</strong> — means the desktop office program the Company distributes free of charge (from November 20, 2026)",
+    "def-key": "<strong>Security key</strong> — means the file the Company issues to members to start Hanpan for Windows (from November 20, 2026)",
+    "svc-hanpan-terms": "Hanpan and security keys are governed by the <a href=\"/hanpan-terms\">Hanpan Terms</a> together with these terms. Where the two documents differ on Hanpan or security keys, the Hanpan Terms prevail.",
+    "appendix": "The definitions of “Hanpan” and “security key” in Article 2 and the Hanpan items in Article 5 take effect on November 20, 2026 (announced November 13, 2026)."
   }
 }

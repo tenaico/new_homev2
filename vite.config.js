@@ -36,6 +36,7 @@ export default defineConfig({
         membership: resolve(__dirname, 'membership.html'),
         privacy:    resolve(__dirname, 'privacy.html'),
         terms:      resolve(__dirname, 'terms.html'),
+        hanpanTerms: resolve(__dirname, 'hanpan-terms.html'),
         admin:      resolve(__dirname, 'admin.html'),
         tenai:      resolve(__dirname, 'tenai-website.html')
       }
