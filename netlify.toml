@@ -6,6 +6,45 @@
 # 깔끔한 주소 — /about 으로 들어와도 about.html 을 그대로 내보낸다.
 # Netlify 가 기본으로 해 주는 동작이지만, 내비게이션 전체가 여기에 걸려 있으므로
 # 설정에 명시해 두어 배포 환경이 바뀌어도 끊기지 않게 한다.
+# 임시 비공개 (2026-11-12) — 로그인·회원가입(/membership)과 AI 앱(/apps)
+# 주소로 직접 들어와도 홈으로 돌려보낸다. force = true 라서 파일이 있어도 이 규칙이 먼저다.
+# 302(임시)라 검색엔진이 영구 이동으로 기억하지 않는다. 다시 열 때 이 묶음을 지운다.
+[[redirects]]
+  from = "/membership"
+  to = "/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/membership.html"
+  to = "/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/membership/*"
+  to = "/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/apps"
+  to = "/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/apps.html"
+  to = "/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/apps/*"
+  to = "/"
+  status = 302
+  force = true
+
 # 두 갈래 홈 — 현관(/)에서 갈라진다
 [[redirects]]
   from = "/biz"

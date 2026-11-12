@@ -21,8 +21,13 @@ const limited = (items, el, fallback) => {
     return n > 0 ? items.slice(0, n) : items;
 };
 
+/* 임시 비공개 (2026-11-12): 로그인·회원가입을 닫아 둔 동안 true.
+   다시 열 때 tenai.css·netlify.toml 의 '임시 비공개' 묶음과 함께 지운다. */
+const MEMBER_OFF = true;
+
 /* 멤버십은 별도 페이지다. 그 페이지 안에서는 스크롤, 밖에서는 이동. */
 function goMembership() {
+    if (MEMBER_OFF) return;
     const el = document.getElementById('membership');
     if (el) { el.scrollIntoView({ behavior: 'smooth' }); return; }
     location.href = '/membership';
@@ -185,7 +190,9 @@ on(grid, 'click', async e => {
         let profile = null;
         try { profile = await TenStore.getMemberProfile(); } catch (_) {}
         if (!profile) {
-            showToast('회원 전용 핸드북입니다. 로그인 후 이용해 주세요.');
+            showToast(MEMBER_OFF
+                ? '회원 전용 핸드북은 준비 중입니다.'
+                : '회원 전용 핸드북입니다. 로그인 후 이용해 주세요.');
             goMembership();
             return;
         }
