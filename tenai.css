@@ -1559,3 +1559,16 @@ html.motion-reduced .cert-hang { animation: none; transition: none; transform: n
 .zoom-stage.is-full { place-items: start center; }
 .zoom-stage.is-full img { max-width: none; max-height: none; width: min(1200px, 100%); cursor: zoom-out; }
 @media (max-width: 600px) { .zoom-full { display: none; } }
+
+/* =====================================================================
+   임시 비공개 (2026-11-12) — 로그인·회원가입, AI 앱
+   ---------------------------------------------------------------------
+   화면에서는 이 묶음이 가리고, 주소로 들어오는 것은 netlify.toml 의
+   '임시 비공개' 규칙이 홈으로 돌려보낸다. 다시 열 때는 이 묶음과
+   netlify.toml 의 그 규칙, site.js 의 MEMBER_OFF 를 함께 지운다.
+   ===================================================================== */
+[data-login], .nav-login,
+a[href="/apps"], a[href^="/apps#"], a[href^="/apps?"], a[href^="/apps.html"],
+a[href="/membership"], a[href^="/membership#"], a[href^="/membership?"], a[href^="/membership.html"],
+#home-new-apps { display: none !important; }
+li:has(> a[href="/apps"]), li:has(> a[href="/membership"]) { display: none !important; }
