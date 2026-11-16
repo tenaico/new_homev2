@@ -74,6 +74,15 @@
         } catch (e) {}
     </script>
     <link rel="preconnect" href="https://i.ytimg.com">
+<style>
+/* PMAI 연혁·팀 (2026-11 임시 개편) */
+.about-band { padding: clamp(64px, 9vw, 120px) clamp(20px, 5vw, 64px); }
+.about-band .wrap { max-width: 1200px; margin: 0 auto; }
+.history-grid, .team-grid { display: grid; gap: 0; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); border-top: 1px solid var(--hair); }
+.history-grid .evo-card, .team-grid .evo-card { min-height: 0; padding: 22px 20px 22px 0; }
+.team-grid .evo-desc + .evo-desc { color: var(--ink-3); font-size: 13.5px; }
+.about-note { margin-top: 18px; color: var(--ink-3); font-size: 13.5px; }
+</style>
 </head>
 <body>
     <a class="skip-link" href="#main">본문 바로가기</a>
@@ -189,12 +198,39 @@
             </div>
         </div>
 
+        <!-- PMAI 대표 제품 띠 -->
+        <div class="tenos-band animate-on-scroll" id="pmai">
+            <div>
+                <span class="tenos-title-chip">FLAGSHIP PRODUCT</span>
+                <h3><span class="outfit">PMAI</span> — 부동산 PM·FM 운영 AI</h3>
+                <p>관리비 정산, 외주 용역 청구서 확인, 임대차 계약, 전기·가스·수도 요금 관리를 하나의 자산 데이터로 묶어 모든 금액과 조항에 근거를 남깁니다. AI가 준비하고 사람이 승인합니다.</p>
+            </div>
+            <div class="tenos-specs">
+                <div class="tenos-spec">
+                    <div class="k">10</div>
+                    <div class="v">운영 모듈</div>
+                </div>
+                <div class="tenos-spec">
+                    <div class="k">1원</div>
+                    <div class="v">단위 안분 재현</div>
+                </div>
+                <div class="tenos-spec">
+                    <div class="k">3-way</div>
+                    <div class="v">외주 청구서 대조</div>
+                </div>
+                <div class="tenos-spec">
+                    <div class="k">L0–L3</div>
+                    <div class="v">단계별 자동화</div>
+                </div>
+            </div>
+        </div>
+
         <!-- TenOS model spec band -->
         <div class="tenos-band animate-on-scroll" id="tenos">
             <div>
-                <span class="tenos-title-chip">FLAGSHIP MODEL</span>
+                <span class="tenos-title-chip">FOUNDATION MODEL</span>
                 <h3><span class="outfit">TenOS-Ko-28B</span> — 한국어 특화 대형 언어 모델</h3>
-                <p>TEN AI가 자체 개발한 한국어 특화 LLM입니다. 한국어의 맥락과 존대 체계, 도메인 용어를 깊이 이해하며, 교육·컨설팅·플랫폼 전 사업 영역의 기술적 기반이 됩니다.</p>
+                <p>TEN AI가 학습한 한국어 특화 LLM입니다. 2026년 5월 Apache 2.0으로 공개했고, 과기정통부·NIA K-AI 리더보드에 처음 진입할 때 종합 5위에 올랐습니다. PMAI는 AI 호출을 어댑터 뒤에 두어 TenOS로 바꿔 끼울 수 있게 설계했습니다.</p>
             </div>
             <div class="tenos-specs">
                 <div class="tenos-spec">
@@ -210,8 +246,8 @@
                     <div class="v">검색증강 생성 최적화</div>
                 </div>
                 <div class="tenos-spec">
-                    <div class="k">Agentic</div>
-                    <div class="v">에이전트 오케스트레이션</div>
+                    <div class="k">Apache 2.0</div>
+                    <div class="v">공개 라이선스</div>
                 </div>
             </div>
             <!-- K-AI 리더보드 실시간 순위 (leaderboard.aihub.or.kr) -->
@@ -231,6 +267,42 @@
                 <p class="tenos-rank-note">
                     제출 모델 <span id="tenosRankModel">–</span> · 리더보드 실시간 조회
                 </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 연혁 -->
+    <section class="about-band" id="history" aria-labelledby="historyTitle">
+        <div class="wrap">
+            <div class="section-header animate-on-scroll">
+                <p class="section-label">History</p>
+                <h2 class="section-title" id="historyTitle">걸어온 길</h2>
+                <p class="section-desc">모델을 먼저 만들고, 현장에서 쓰이는 제품으로 옮겨 왔습니다</p>
+            </div>
+            <div class="history-grid animate-on-scroll">
+                <div class="evo-card"><div class="evo-number outfit">2026. 03</div><h3 class="evo-title">법인 설립</h3><p class="evo-desc">주식회사 텐에이아이 설립. 8월까지 한국어 LLM 개발에 집중</p></div>
+                <div class="evo-card"><div class="evo-number outfit">2026. 05</div><h3 class="evo-title">TenOS-Ko-28B 공개</h3><p class="evo-desc">Apache 2.0 공개, K-AI 리더보드 최초 진입 종합 5위</p></div>
+                <div class="evo-card"><div class="evo-number outfit">2026. 08</div><h3 class="evo-title">본격 영업 시작</h3><p class="evo-desc">AI 교육 · AX 컨설팅 · 구축, (사)리본디어스 업무협약</p></div>
+                <div class="evo-card"><div class="evo-number outfit">2026. 10</div><h3 class="evo-title">서울 AI 허브 멤버십</h3><p class="evo-desc">멤버십 기업 선정(2026-504), 자본금 1억 원 증자</p></div>
+                <div class="evo-card highlight-card"><div class="evo-number outfit">2026. 11</div><h3 class="evo-title">PMAI 시제품</h3><p class="evo-desc">정산 · 검증 엔진 시제품 개발 완료(가상 건물 2개 데모)</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 팀 -->
+    <section class="about-band" id="team" aria-labelledby="teamTitle">
+        <div class="wrap">
+            <div class="section-header animate-on-scroll">
+                <p class="section-label">Team</p>
+                <h2 class="section-title" id="teamTitle">정산 규칙을 아는 사람과, 그 규칙을 코드로 만드는 사람</h2>
+                <p class="section-desc">부동산 자산관리 실무와 AI 개발을 한 팀에 두었습니다</p>
+            </div>
+            <div class="team-grid animate-on-scroll">
+                <div class="evo-card"><div class="evo-number outfit">CEO</div><h3 class="evo-title">대표이사</h3><p class="evo-desc">사업 총괄 · AI 전략 · 모델 기획</p><p class="evo-desc">경영학박사, 명지대 겸임교수, 저서 「코딩 없는 AI주권」</p></div>
+                <div class="evo-card highlight-card"><div class="evo-number outfit">STRATEGY</div><h3 class="evo-title">이사 · 전략·기획</h3><p class="evo-desc">PMAI 사업 전략 · 정산·검증 규칙 설계 · 실증 총괄</p><p class="evo-desc">부동산 자산관리 30년(AM · PM · FM)</p></div>
+                <div class="evo-card"><div class="evo-number outfit">MARKETING</div><h3 class="evo-title">이사 · 마케팅</h3><p class="evo-desc">마케팅 총괄 · 판로 · ESG 연계</p><p class="evo-desc">이커머스 · 브랜딩 · 지역마케팅 15년 이상</p></div>
+                <div class="evo-card"><div class="evo-number outfit">ENGINEERING</div><h3 class="evo-title">개발수석</h3><p class="evo-desc">TenOS-Ko · RAG · PMAI Core · RUNIQ STUDIO 개발</p><p class="evo-desc">소프트웨어 개발 · 운영 8년</p></div>
+                <div class="evo-card"><div class="evo-number outfit">OPERATIONS</div><h3 class="evo-title">경영지원수석</h3><p class="evo-desc">재무 · 계약 · 인사</p><p class="evo-desc">재무 · 인사 7년, 사내 ERP 설계 · 구축</p></div>
             </div>
         </div>
     </section>
@@ -293,31 +365,20 @@
             <h2 class="profile-title">회사소개서</h2>
             <div class="profile-body">
                 <p class="profile-desc">
-                    사업 영역과 기술 역량, 주력 제품 RUNIQ STUDIO와 현장 솔루션, 수행 실적을 담았습니다.
-                    <strong>웹판은 화면에서 넘겨 보는 52장이고,</strong>
-                    인쇄·첨부용 PDF는 44쪽입니다.
+                    주력 제품 PMAI와 사업 영역, 현장 솔루션, 기술 역량, 수행 실적을 담았습니다.
+                    <strong>화면에서 넘겨 보는 웹판 55장입니다.</strong>
                 </p>
                 <dl class="profile-facts">
-                    <div><dt>구성</dt><dd>웹판 52장 · PDF 44쪽</dd></div>
+                    <div><dt>구성</dt><dd>웹판 55장</dd></div>
                     <div><dt>기준</dt><dd>ISO 14064-1 · GHG Protocol</dd></div>
-                    <div><dt>갱신</dt><dd>2026년 10월</dd></div>
+                    <div><dt>갱신</dt><dd>2026년 11월</dd></div>
                 </dl>
                 <div class="profile-actions">
                     <a class="btn-primary profile-view" href="/profile/">
                         온라인으로 보기
                         <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </a>
-                    <a class="btn-secondary profile-dl"
-                       href="/docs/TenAI-Company-Profile-2026.pdf"
-                       download="TenAI_회사소개서_2026.pdf"
-                       type="application/pdf">
-                        PDF 내려받기
-                        <span class="profile-size">2.7&nbsp;MB</span>
-                    </a>
                 </div>
-                <p class="profile-note">
-                    온라인 열람은 내려받기보다 전송량이 적습니다. 인쇄나 첨부가 필요할 때만 PDF를 받으시길 권합니다.
-                </p>
             </div>
         </div>
     </section>
@@ -328,7 +389,7 @@
             <div class="cta-main">
                 <div class="threads" data-lottie="threads" data-lottie-mode="intro-loop" data-lottie-loop-from="46" data-lottie-rest="46" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
                 <h2 class="cta-title" id="contactTitle">AI가 삶에 닿을 때,<br>혁신은 현실이 됩니다</h2>
-                <p class="lead">TEN AI와 함께 실천적 지능의 시대를 열어가세요. 교육, 컨설팅, 플랫폼 구축까지 맞춤형 솔루션을 제공합니다.</p>
+                <p class="lead">TEN AI와 함께 실천적 지능의 시대를 열어가세요. 건물 운영 AI(PMAI)부터 AI 교육 · 구축까지 맞춤형으로 제공합니다.</p>
                 <div class="cta-actions">
                     <a class="btn btn-ink" href="mailto:leesh@tenai.kr" data-mail-subject="TEN AI 상담 문의" data-inquiry>상담 신청서 쓰기 <span class="arr" aria-hidden="true">→</span></a>
                     <a class="btn btn-ghost" href="mailto:leesh@tenai.kr" data-mail-subject="TEN AI 상담 문의">메일로 문의</a>
